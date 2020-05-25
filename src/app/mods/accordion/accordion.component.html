@@ -1,11 +1,13 @@
-<div class="ui styled accordion" *ngFor="let accordion of accordionData">
-  <div class="active title">
-    <i class="dropdown icon"></i>
-    {{ accordion.title }}
-  </div>
-  <div class="active content">
-    <p>
-      {{ accordion.content }}
-    </p>
-  </div>
+<div class="ui styled accordion">
+  <ng-container *ngFor="let accordion of accordionData">
+    <div class="active title">
+      <i class="dropdown icon"></i>
+      {{ accordion.title }}
+    </div>
+    <div class="active content">
+      <p>
+        {{ accordion.content }}
+      </p>
+    </div>
+  </ng-container>
 </div>
